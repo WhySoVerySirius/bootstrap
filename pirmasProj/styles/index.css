@@ -1,0 +1,56 @@
+:root {
+    --ff-main: 'Open Sans', sans-serif;
+    --ff-accent: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white !important;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize
+}
+
+img {
+    height: 100vh !important;
+}
+
+.navbar {
+    font-family: var(--ff-accent);
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.877)!important;
+    position: fixed;
+    width: 100%;
+}
+
+.collapse {
+    text-transform: uppercase !important;
+    font-size: 13px;
+}
+
+.carousel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+    z-index: 1;
+    font-family: var(--ff-main);
+}
+
+.mid-flex {
+    display: flex;
+    position: relative !important;
+    justify-content: center;
+}
+
+.redbutton {
+    text-decoration: none;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 1rem 1.5 rem;
+}
