@@ -4,6 +4,10 @@
     --clr-accent: #18d26e;
 }
 
+p {
+    font-family: var(--ff-main);
+}
+
 a {
     cursor: pointer;
 }
@@ -50,6 +54,7 @@ a {
 
 .carousel .carousel-item {
     height: 100vh;
+    position: relative;
 }
 
 .carousel-item img {
@@ -58,4 +63,48 @@ a {
     top: 0;
     left: 0;
     height: 100vh;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    top: 45%;
+    z-index: 1;
+}
+
+.carousel-indicators {
+    z-index: 2;
+}
+
+.carousel-caption h5,
+.carousel-caption a {
+    font-family: var(--ff-accent);
+}
+
+.carousel-caption h5 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--clr-accent);
+    letter-spacing: 1px;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 2rem;
+}
+
+.carousel-caption a:hover {
+    background-color: white;
+    color: var(--clr-accent);
 }
