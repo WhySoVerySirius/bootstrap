@@ -100,7 +100,7 @@ a {
     background-color: var(--clr-accent);
     letter-spacing: 1px;
     color: white;
-    padding: 0.5px 2px;
+    padding: 0.5rem 2rem;
     border-radius: 2rem;
 }
 
