@@ -206,7 +206,7 @@ header {
         .img5 {
             background-image: url(../img-hero/5.jpg);
         }
-        .carousel-item {
+        .dark-carousel {
             @extend %bgImageDark;
             @extend %flexCenter;
             height: 100%;
@@ -606,6 +606,43 @@ header {
             img {
                 border-radius: 0.4rem;
             }
+            .portfolioPic {
+                position: relative;
+                .portfolioBg {
+                    z-index: -1;
+                    border-radius: 0.4rem;
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    flex-direction: row;
+                    transition: background-color 500ms ease-in-out;
+                    a {
+                        position: absolute;
+                        font-size: 1.5rem;
+                        border-radius: 50%;
+                        padding: 0.3rem 0.75rem;
+                        transition-duration: 500ms;
+                        &:hover {
+                            background: $accent-color;
+                            color: $main-color;
+                            transition-duration: 500ms;
+                        }
+                    }
+                    .bi-plus {
+                        top: 25%;
+                        left: 33%;
+                    }
+                    .bi-link {
+                        top: 25%;
+                        right: 33%;
+                    }
+                }
+            }
+            &:hover .portfolioBg {
+                z-index: 5;
+                background: rgba(0, 0, 0, 0.5);
+                transition: background-color 500ms ease-in-out;
+            }
             .portfolioText {
                 z-index: 10;
                 background: white;
@@ -673,15 +710,101 @@ header {
     }
     .swiper {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        width: 100%;
         .swiper-wrapper {
             display: flex;
             align-items: center;
             margin: 0;
             .swiper-slide {
                 width: auto;
+                position: relative;
             }
-            img {}
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.testimonials {
+    background: #F7F7F7;
+    padding: 4rem 0;
+    h3 {
+        z-index: inherit;
+        font-family: $accent-font;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #111111;
+        position: relative;
+        text-align: center;
+        margin-bottom: 1.3rem;
+        padding-bottom: 0.9rem;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            background: #ddd;
+            height: 1px;
+            width: 120px;
+            left: calc(50% - 60px);
+            z-index: 5;
+            display: block;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 6;
+            height: 3px;
+            width: 40px;
+            display: block;
+            bottom: 0px;
+            left: calc(50% - 20px);
+            background: $accent-color;
+        }
+    }
+    img {
+        height: 120px;
+        max-width: 120px;
+        border-radius: 50%;
+        position: relative;
+        margin-inline: auto;
+    }
+    .testimonialContainer {
+        @extend %flexCenter;
+        flex-direction: column;
+        .carousel-inner {
+            height: 100%;
+            .carousel-item {
+                height: 100%;
+                .carousel-caption {
+                    position: relative;
+                    margin-inline: auto;
+                    text-align: center;
+                    inset: unset;
+                    h5 {
+                        font-family: $accent-font;
+                        font-size: 1.3rem;
+                        color: #111111;
+                        margin: 0.625rem 0 0.313rem;
+                        font-weight: 700;
+                    }
+                    h6 {
+                        font-family: $accent-font;
+                        color: #999999;
+                        font-size: 0.875rem;
+                        margin-bottom: 0.9rem;
+                    }
+                    p {
+                        font-family: $main-font;
+                        color: #666666;
+                        font-size: 1rem;
+                        margin: 0 8.07rem 0.9rem;
+                    }
+                }
+            }
         }
     }
 }

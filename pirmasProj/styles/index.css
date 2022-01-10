@@ -43,7 +43,7 @@
   padding-inline: 0.8rem;
 }
 
-.portfolio div, .portfolio, .facts div .cards, .progressBar, .callToAction div, .services div, .about div .aboutCards div, .about div, .icons, .carousel .carousel-inner .carousel-item div, .carousel .carousel-inner .carousel-item, header div nav div ul, header div nav div, header div, header {
+.testimonials .testimonialContainer, .portfolio div, .portfolio, .facts div .cards, .progressBar, .callToAction div, .services div, .about div .aboutCards div, .about div, .icons, .carousel .carousel-inner .dark-carousel div, .carousel .carousel-inner .dark-carousel, header div nav div ul, header div nav div, header div, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,13 +55,13 @@
           justify-content: center;
 }
 
-.carousel .carousel-inner .carousel-item {
+.carousel .carousel-inner .dark-carousel {
   background-size: cover;
   background-position: center;
   height: 100%;
   position: relative;
 }
-.carousel .carousel-inner .carousel-item::after {
+.carousel .carousel-inner .dark-carousel::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -227,10 +227,10 @@ header div nav .dropDown a {
 .carousel .carousel-inner .img5 {
   background-image: url(../img-hero/5.jpg);
 }
-.carousel .carousel-inner .carousel-item {
+.carousel .carousel-inner .dark-carousel {
   height: 100%;
 }
-.carousel .carousel-inner .carousel-item div {
+.carousel .carousel-inner .dark-carousel div {
   margin-inline: 224.5px;
   padding-inline: 12px;
   -webkit-box-orient: vertical;
@@ -239,14 +239,14 @@ header div nav .dropDown a {
           flex-direction: column;
   z-index: 10;
 }
-.carousel .carousel-inner .carousel-item div h5 {
+.carousel .carousel-inner .dark-carousel div h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: white;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.carousel .carousel-inner .carousel-item div p {
+.carousel .carousel-inner .dark-carousel div p {
   display: block;
   margin: 0 259.2px 30px 259.2px;
   text-align: center;
@@ -254,7 +254,7 @@ header div nav .dropDown a {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
-.carousel .carousel-inner .carousel-item div a {
+.carousel .carousel-inner .dark-carousel div a {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -267,7 +267,7 @@ header div nav .dropDown a {
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
-.carousel .carousel-inner .carousel-item div a:hover {
+.carousel .carousel-inner .dark-carousel div a:hover {
   background-color: white;
   color: #18d26e;
   -webkit-transition-duration: 500ms;
@@ -751,6 +751,52 @@ header div nav .dropDown a {
 .portfolio .portfolioGrid .portfolioCard img {
   border-radius: 0.4rem;
 }
+.portfolio .portfolioGrid .portfolioCard .portfolioPic {
+  position: relative;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg {
+  z-index: -1;
+  border-radius: 0.4rem;
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg a {
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.3rem 0.75rem;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg a:hover {
+  background: #18d26e;
+  color: white;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg .bi-plus {
+  top: 25%;
+  left: 33%;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg .bi-link {
+  top: 25%;
+  right: 33%;
+}
+.portfolio .portfolioGrid .portfolioCard:hover .portfolioBg {
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
 .portfolio .portfolioGrid .portfolioCard .portfolioText {
   z-index: 10;
   background: white;
@@ -818,9 +864,14 @@ header div nav .dropDown a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .clientSwiper .swiper .swiper-wrapper {
   display: -webkit-box;
@@ -833,4 +884,91 @@ header div nav .dropDown a {
 }
 .clientSwiper .swiper .swiper-wrapper .swiper-slide {
   width: auto;
+  position: relative;
+}
+.clientSwiper .swiper .swiper-wrapper img {
+  margin-right: 1rem;
+}
+
+.testimonials {
+  background: #F7F7F7;
+  padding: 4rem 0;
+}
+.testimonials h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.testimonials h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.testimonials h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.testimonials img {
+  height: 120px;
+  max-width: 120px;
+  border-radius: 50%;
+  position: relative;
+  margin-inline: auto;
+}
+.testimonials .testimonialContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials .testimonialContainer .carousel-inner {
+  height: 100%;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item {
+  height: 100%;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  inset: unset;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #111111;
+  margin: 0.625rem 0 0.313rem;
+  font-weight: 700;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  font-size: 0.875rem;
+  margin-bottom: 0.9rem;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption p {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  font-size: 1rem;
+  margin: 0 8.07rem 0.9rem;
 }
