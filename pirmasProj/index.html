@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -94,14 +96,14 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active img1">
+                    <div class="carousel-item active img1" data-bs-interval='5000'>
                         <div>
                             <h5 class='animate__animated animate__fadeInDown'>We are professional</h5>
                             <p class='animate__animated animate__fadeInUp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <a href="#" class='animate__animated animate__fadeInUp'>get started</a>
                         </div>
                     </div>
-                    <div class="carousel-item img2">
+                    <div class="carousel-item img2" data-bs-interval='5000'>
                         <div>
                             <h5 class='animate__animated animate__fadeInDown'>At vero eos et accusamus</h5>
                             <p class='animate__animated animate__fadeInUp'>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
@@ -109,7 +111,7 @@
                             <a href="#" class='animate__animated animate__fadeInUp'>get started</a>
                         </div>
                     </div>
-                    <div class="carousel-item img3">
+                    <div class="carousel-item img3" data-bs-interval='5000'>
                         <div>
                             <h5 class='animate__animated animate__fadeInDown'>Temporibus autem quibusdam</h5>
                             <p class='animate__animated animate__fadeInUp'>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem
@@ -118,7 +120,7 @@
                             <a href="#" class='animate__animated animate__fadeInUp'>get started</a>
                         </div>
                     </div>
-                    <div class="carousel-item img4">
+                    <div class="carousel-item img4" data-bs-interval='5000'>
                         <div>
                             <h5 class='animate__animated animate__fadeInDown'>Nam libero tempore</h5>
                             <p class='animate__animated animate__fadeInUp'>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
@@ -126,7 +128,7 @@
                             <a href="#" class='animate__animated animate__fadeInUp'>get started</a>
                         </div>
                     </div>
-                    <div class="carousel-item img5">
+                    <div class="carousel-item img5" data-bs-interval='5000'>
                         <div>
                             <h5 class='animate__animated animate__fadeInDown'>Magnam aliquam quaerat</h5>
                             <p class='animate__animated animate__fadeInUp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -189,44 +191,242 @@
         </section>
         <section class='services'>
             <div>
-                <h2>services</h2>
+                <h3>services</h3>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
                 <div class='serviceGrid'>
                     <div>
                         <i class='bi bi-briefcase'></i>
-                        <h3>lorem ipsum</h3>
+                        <h4>lorem ipsum</h4>
                         <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                     </div>
                     <div>
                         <i class='bi bi-card-checklist'></i>
-                        <h3>dolor sitema</h3>
+                        <h4>dolor sitema</h4>
                         <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
                     </div>
                     <div>
                         <i class='bi bi-bar-chart'></i>
-                        <h3>sed ut perspiciatis</h3>
+                        <h4>sed ut perspiciatis</h4>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                     </div>
                     <div>
                         <i class='bi bi-binoculars'></i>
-                        <h3>magni dolores</h3>
+                        <h4>magni dolores</h4>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                     <div>
                         <i class='bi bi-brightness-high'></i>
-                        <h3>nemo enim</h3>
+                        <h4>nemo enim</h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
                     </div>
                     <div>
                         <i class='bi bi-calendar4-week'></i>
-                        <h3>eiusmod tempor</h3>
+                        <h4>eiusmod tempor</h4>
                         <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class='callToAction'>
+            <div>
+                <h3>call to action</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="">call to action</a>
+            </div>
+        </section>
+        <section class="progressBar">
+            <div>
+                <h3>our skills</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                <div class='allProgress'>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div>html</div>
+                            <div>100%</div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div>css</div>
+                            <div>90%</div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div>javascript</div>
+                            <div>75%</div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                            <div>photoshop</div>
+                            <div>55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="facts">
+            <div>
+                <h3>facts</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                <div class='cards'>
+                    <div class='factCard'>
+                        <div class='markUp'>232</div>
+                        <div class='context'>clients</div>
+                    </div>
+                    <div class='factCard'>
+                        <div class='markUp'>421</div>
+                        <div class='context'>projects</div>
+                    </div>
+                    <div class='factCard'>
+                        <div class='markUp'>1364</div>
+                        <div class='context'>hours of support</div>
+                    </div>
+                    <div class='factCard'>
+                        <div class='markUp'>38</div>
+                        <div class='context'>hard workers</div>
+                    </div>
+                </div>
+                <img src="./facts/facts-img.png" alt="">
+            </div>
+        </section>
+        <section class="portfolio">
+            <div>
+                <h3>our portfolio</h3>
+                <div class='portfolioButtons'>
+                    <a href="#">all</a>
+                    <a href="#">app</a>
+                    <a href="#">card</a>
+                    <a href="#">web</a>
+                </div>
+                <div class="portfolioGrid">
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/app1.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>app 1</div>
+                            <div class='portfolioType'>app</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/web3.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>web 3</div>
+                            <div class='portfolioType'>web</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/app2.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>app 2</div>
+                            <div class='portfolioType'>app</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/card2.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>card 2</div>
+                            <div class='portfolioType'>card</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/web2.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>web2</div>
+                            <div class='portfolioType'>web</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/app3.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>app3</div>
+                            <div class='portfolioType'>app</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/card1.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>card 1</div>
+                            <div class='portfolioType'>card</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="./portfolio/card3.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>card 3</div>
+                            <div class='portfolioType'>card</div>
+                        </div>
+                    </div>
+                    <div class='portfolioCard'>
+                        <div class='portfolioName'>
+                            <img src="portfolio/web1.jpg" alt="">
+                            <div class='portfolioBg'></div>
+                        </div>
+                        <div class='portfolioText'>
+                            <div class='portfolioName'>web 1</div>
+                            <div class='portfolioType'>web</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='clientSwiper'>
+            <div class="swiperPosition">
+                <h3>our clients</h3>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./clients/client-1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-7.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./clients/client-8.png" alt=""></div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- <script src="./script.js"></script> -->
+    <script src="./swiperscript.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 </body>
 

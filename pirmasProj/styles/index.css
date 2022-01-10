@@ -1,4 +1,49 @@
-.services div, .about div .aboutCards div, .about div, .icons, .carousel .carousel-inner .carousel-item div, .carousel .carousel-inner .carousel-item, header div nav div ul, header div nav div, header div, header {
+.facts h3, .progressBar div h3, .services div h3, .about div h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.facts h3::after, .progressBar div h3::after, .services div h3::after, .about div h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.facts h3::before, .progressBar div h3::before, .services div h3::before, .about div h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.facts p, .progressBar div p, .services div p, .about div p {
+  text-align: center;
+  z-index: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 1.875rem;
+  padding-bottom: 1.875rem;
+  padding-inline: 0.8rem;
+}
+
+.portfolio div, .portfolio, .facts div .cards, .progressBar, .callToAction div, .services div, .about div .aboutCards div, .about div, .icons, .carousel .carousel-inner .carousel-item div, .carousel .carousel-inner .carousel-item, header div nav div ul, header div nav div, header div, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +110,7 @@ header div nav div .logogo::before {
 header div nav div ul {
   text-transform: uppercase;
   margin: 0;
+  cursor: pointer;
 }
 header div nav div .dropSign::after {
   content: ">";
@@ -270,7 +316,7 @@ header div nav .dropDown a {
 
 .about {
   width: 100%;
-  height: 737.14px;
+  padding: 3.75rem 0 2.5rem;
   background-image: url(../aboutBG/about-bg.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -293,48 +339,6 @@ header div nav .dropDown a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-}
-.about div h3 {
-  z-index: inherit;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #111111;
-  position: relative;
-  text-align: center;
-}
-.about div h3::after {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  background: #ddd;
-  height: 1px;
-  width: 120px;
-  left: calc(50% - 60px);
-  z-index: 5;
-  display: block;
-}
-.about div h3::before {
-  content: "";
-  position: absolute;
-  z-index: 6;
-  height: 3px;
-  width: 60px;
-  display: block;
-  bottom: 0px;
-  left: calc(50% - 30px);
-  background: #18d26e;
-}
-.about div p {
-  text-align: center;
-  z-index: inherit;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: #333333;
-  margin-bottom: 1.875rem;
-  padding-bottom: 1.875rem;
-  padding-inline: 0.8rem;
 }
 .about div .aboutCards {
   display: -ms-grid;
@@ -407,56 +411,18 @@ header div nav .dropDown a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.services div h2 {
-  z-index: inherit;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #111111;
-  position: relative;
-  text-align: center;
-}
-.services div h2::after {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  background: #ddd;
-  height: 1px;
-  width: 120px;
-  left: calc(50% - 60px);
-  z-index: 5;
-  display: block;
-}
-.services div h2::before {
-  content: "";
-  position: absolute;
-  z-index: 6;
-  height: 3px;
-  width: 60px;
-  display: block;
-  bottom: 0px;
-  left: calc(50% - 30px);
-  background: #18d26e;
-}
-.services div p {
-  text-align: center;
-  z-index: inherit;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: #333333;
-  margin-bottom: 1.875rem;
-  padding-bottom: 1.875rem;
-  padding-inline: 0.8rem;
+  max-width: 1320px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .services div .serviceGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 27.5rem 27.5rem 27.5rem;
-  grid-template-columns: 27.5rem 27.5rem 27.5rem;
-  -ms-grid-rows: 108.59px 108.59px;
-  grid-template-rows: 108.59px 108.59px;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 .services div .serviceGrid > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -481,4 +447,390 @@ header div nav .dropDown a {
 .services div .serviceGrid > *:nth-child(6) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
+}
+.services div .serviceGrid div {
+  position: relative;
+  margin: 0 0 1.875rem;
+  padding-inline: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.services div .serviceGrid div i {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  font-size: 2rem;
+  color: #18d26e;
+}
+.services div .serviceGrid div h4 {
+  margin: 0 0 0.9rem 3.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.services div .serviceGrid div p {
+  margin-left: 3.75rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #666666;
+  text-align: left;
+  padding: 0;
+}
+
+.callToAction {
+  background-image: url(../cta/call-to-action-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.callToAction div {
+  max-width: 1320px;
+  padding: 3.75rem 0.8rem;
+  margin-inline: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.callToAction div h3 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1.3rem;
+  color: white;
+}
+.callToAction div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin: 1.875rem;
+  color: white;
+  text-align: center;
+}
+.callToAction div a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  border-radius: 1.6rem;
+  padding: 0.5rem 1.8rem;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.callToAction div a:hover {
+  background: #18d26e;
+  border: 2px solid #18d26e;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.progressBar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.75rem 0;
+}
+.progressBar div {
+  max-width: 1320px;
+  margin-inline: auto;
+}
+.progressBar div .allProgress {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.progressBar div .allProgress .progress {
+  height: 2.188rem;
+  margin-inline: 0;
+}
+.progressBar div .allProgress .progress-bar {
+  margin-inline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.progressBar div .allProgress .progress-bar div {
+  margin-inline: 0;
+  padding-inline: 1.3rem;
+  text-transform: uppercase;
+}
+
+.facts {
+  padding: 3.75rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../facts/facts-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.facts::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  inset: 0;
+}
+.facts div {
+  z-index: 5;
+}
+.facts div .cards .factCard {
+  width: 20.625rem;
+  height: 7.063rem;
+  padding-inline: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.facts div .cards .markUp {
+  font-size: 3rem;
+  color: #18d26e;
+  font-weight: 700;
+}
+.facts div .cards .context {
+  font-size: 0.9rem;
+  margin-bottom: 1.3rem;
+  text-transform: capitalize;
+}
+.facts div img {
+  padding-top: 1.875rem;
+  width: 100%;
+}
+
+.portfolio {
+  padding: 3.75rem 0 3.75rem;
+  background: #f7f7f7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.portfolio h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.portfolio h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.portfolio div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio div .portfolioButtons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.313rem 0 2.188rem;
+}
+.portfolio a {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 0.3rem;
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  margin: 0.9rem 0.9rem 0.3rem 0;
+}
+.portfolio .portfolioGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 416px 1rem 416px 1rem 416px;
+  grid-template-columns: 416px 416px 416px;
+  -ms-grid-rows: 312px 1rem 312px 1rem 312px;
+  grid-template-rows: 312px 312px 312px;
+  grid-gap: 1rem;
+}
+.portfolio .portfolioGrid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid .portfolioCard {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.portfolio .portfolioGrid .portfolioCard img {
+  border-radius: 0.4rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText {
+  z-index: 10;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText .portfolioName {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText .portfolioType {
+  font-family: "Open Sans", sans-serif;
+  color: #B8B8B8;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.clientSwiper {
+  padding: 4rem 0;
+  max-width: 1320px;
+  margin-inline: auto;
+}
+.clientSwiper h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.clientSwiper h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.clientSwiper h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.clientSwiper .swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clientSwiper .swiper .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.clientSwiper .swiper .swiper-wrapper .swiper-slide {
+  width: auto;
 }
