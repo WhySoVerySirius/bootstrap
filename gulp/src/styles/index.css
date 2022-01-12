@@ -1,0 +1,978 @@
+.facts h3, .progressBar div h3, .services div h3, .about div h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.facts h3::after, .progressBar div h3::after, .services div h3::after, .about div h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.facts h3::before, .progressBar div h3::before, .services div h3::before, .about div h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.facts p, .progressBar div p, .services div p, .about div p {
+  text-align: center;
+  z-index: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 1.875rem;
+  padding-bottom: 1.875rem;
+  padding-inline: 0.8rem;
+}
+
+.testimonials .testimonialContainer, .portfolio div, .portfolio, .facts div .cards, .progressBar, .callToAction div, .services div, .about div .aboutCards div, .about div, .icons, .carousel .carousel-inner .dark-carousel div, .carousel .carousel-inner .dark-carousel, header div nav div ul, header div nav div, header div, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel .carousel-inner .dark-carousel {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+.carousel .carousel-inner .dark-carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  height: 5rem;
+}
+header div {
+  padding-inline: 24px;
+  width: 100%;
+}
+header div nav {
+  width: 100%;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  color: white;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header div nav div {
+  position: relative;
+  width: auto;
+}
+header div nav div .logogo {
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+header div nav div .logogo::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  top: 10%;
+  width: 4px;
+  background-color: #18d26e;
+  left: 14px;
+}
+header div nav div ul {
+  text-transform: uppercase;
+  margin: 0;
+  cursor: pointer;
+}
+header div nav div .dropSign::after {
+  content: ">";
+  display: inline-block;
+  -webkit-transform: rotate(90deg) scale(1.17);
+          transform: rotate(90deg) scale(1.17);
+  opacity: 0.8;
+}
+header div nav div li,
+header div nav div a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+header div nav div li {
+  padding: 10px 0 10px 30px;
+}
+header div nav .dropDown {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  right: 8rem;
+  top: 2.6rem;
+  background: white;
+  width: 200px;
+}
+header div nav .dropDown .dropSign1 {
+  width: 100%;
+  position: relativeDrop Down 4;
+}
+header div nav .dropDown .dropSign1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header div nav .dropDown .dropSign1 a span {
+  display: inline-block;
+}
+header div nav .dropDown .dropSign1 a span::before {
+  content: ">";
+}
+header div nav .dropDown .dropSign1 .deepDropDown {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: white;
+  left: 200px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: 10px;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+header div nav .dropDown li {
+  padding: 0;
+}
+header div nav .dropDown a {
+  color: #666666;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  display: block;
+}
+
+#drop:hover .dropDown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#drop1:hover .deepDropDown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.carousel .carousel-inner {
+  height: 100vh;
+}
+.carousel .carousel-inner .img1 {
+  background-image: url(../img/img-hero/1.jpg);
+}
+.carousel .carousel-inner .img2 {
+  background-image: url(../img/img-hero/2.jpg);
+}
+.carousel .carousel-inner .img3 {
+  background-image: url(../img/img-hero/3.jpg);
+}
+.carousel .carousel-inner .img4 {
+  background-image: url(../img/img-hero/4.jpg);
+}
+.carousel .carousel-inner .img5 {
+  background-image: url(../img/img-hero/5.jpg);
+}
+.carousel .carousel-inner .dark-carousel {
+  height: 100%;
+}
+.carousel .carousel-inner .dark-carousel div {
+  margin-inline: 224.5px;
+  padding-inline: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+}
+.carousel .carousel-inner .dark-carousel div h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.carousel .carousel-inner .dark-carousel div p {
+  display: block;
+  margin: 0 259.2px 30px 259.2px;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.carousel .carousel-inner .dark-carousel div a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  background-color: #18d26e;
+  color: white;
+  border-radius: 50px;
+  text-transform: capitalize;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.carousel .carousel-inner .dark-carousel div a:hover {
+  background-color: white;
+  color: #18d26e;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.icons {
+  width: 100%;
+  height: 207.59px;
+  background: black;
+  color: white;
+}
+.icons .gradientCard {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#232232), to(black));
+  background: linear-gradient(black, #232232, black);
+}
+.icons div {
+  height: 207.59px;
+  width: 440px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.icons div i {
+  font-size: 3rem;
+  color: #18d26e;
+  margin-bottom: -10px;
+}
+.icons div h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.icons div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.about {
+  width: 100%;
+  padding: 3.75rem 0 2.5rem;
+  background-image: url(../img/aboutBG/about-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  inset: 0;
+}
+.about div {
+  max-width: 1320px;
+  z-index: 5;
+  margin-inline: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.about div .aboutCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 416px 24px 416px 24px 416px;
+  grid-template-columns: 416px 416px 416px;
+  grid-gap: 24px;
+  height: 455.75px;
+}
+.about div .aboutCards div {
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  border-radius: 1rem;
+  position: relative;
+}
+.about div .aboutCards div img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.about div .aboutCards div div {
+  z-index: 6;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #18d26e;
+  -webkit-box-shadow: 0 0 0 0.25rem white;
+          box-shadow: 0 0 0 0.25rem white;
+  position: absolute;
+  top: 47%;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.about div .aboutCards div div i {
+  font-size: 1.8rem;
+  color: white;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.about div .aboutCards div h2 {
+  margin: 40px 0 12px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.about div .aboutCards div p {
+  padding: 0 1.25rem 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+.about div .aboutCards div:hover div {
+  background: white;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.about div .aboutCards div:hover div i {
+  color: #18d26e;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.services {
+  padding: 3.75rem 0 2.5rem;
+}
+.services div {
+  margin-inline: auto;
+  padding-inline: 0.8rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1320px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services div .serviceGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+.services div .serviceGrid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.services div .serviceGrid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.services div .serviceGrid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.services div .serviceGrid > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.services div .serviceGrid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.services div .serviceGrid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.services div .serviceGrid div {
+  position: relative;
+  margin: 0 0 1.875rem;
+  padding-inline: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.services div .serviceGrid div i {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  font-size: 2rem;
+  color: #18d26e;
+}
+.services div .serviceGrid div h4 {
+  margin: 0 0 0.9rem 3.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.services div .serviceGrid div p {
+  margin-left: 3.75rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #666666;
+  text-align: left;
+  padding: 0;
+}
+
+.callToAction {
+  background-image: url(../cta/call-to-action-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.callToAction div {
+  max-width: 1320px;
+  padding: 3.75rem 0.8rem;
+  margin-inline: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.callToAction div h3 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1.3rem;
+  color: white;
+}
+.callToAction div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin: 1.875rem;
+  color: white;
+  text-align: center;
+}
+.callToAction div a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid white;
+  border-radius: 1.6rem;
+  padding: 0.5rem 1.8rem;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.callToAction div a:hover {
+  background: #18d26e;
+  border: 2px solid #18d26e;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.progressBar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.75rem 0;
+}
+.progressBar div {
+  max-width: 1320px;
+  margin-inline: auto;
+}
+.progressBar div .allProgress {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.progressBar div .allProgress .progress {
+  height: 2.188rem;
+  margin-inline: 0;
+}
+.progressBar div .allProgress .progress-bar {
+  margin-inline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.progressBar div .allProgress .progress-bar div {
+  margin-inline: 0;
+  padding-inline: 1.3rem;
+  text-transform: uppercase;
+}
+
+.facts {
+  padding: 3.75rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../facts/facts-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.facts::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  inset: 0;
+}
+.facts div {
+  z-index: 5;
+}
+.facts div .cards .factCard {
+  width: 20.625rem;
+  height: 7.063rem;
+  padding-inline: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.facts div .cards .markUp {
+  font-size: 3rem;
+  color: #18d26e;
+  font-weight: 700;
+}
+.facts div .cards .context {
+  font-size: 0.9rem;
+  margin-bottom: 1.3rem;
+  text-transform: capitalize;
+}
+.facts div img {
+  padding-top: 1.875rem;
+  width: 100%;
+}
+
+.portfolio {
+  padding: 3.75rem 0 3.75rem;
+  background: #f7f7f7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.portfolio h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.portfolio h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.portfolio div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio div .portfolioButtons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.313rem 0 2.188rem;
+}
+.portfolio a {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 0.3rem;
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  margin: 0.9rem 0.9rem 0.3rem 0;
+}
+.portfolio .portfolioGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 416px 1rem 416px 1rem 416px;
+  grid-template-columns: 416px 416px 416px;
+  -ms-grid-rows: 312px 1rem 312px 1rem 312px;
+  grid-template-rows: 312px 312px 312px;
+  grid-gap: 1rem;
+}
+.portfolio .portfolioGrid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.portfolio .portfolioGrid > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.portfolio .portfolioGrid > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.portfolio .portfolioGrid .portfolioCard {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.portfolio .portfolioGrid .portfolioCard img {
+  border-radius: 0.4rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic {
+  position: relative;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg {
+  z-index: -1;
+  border-radius: 0.4rem;
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg a {
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.3rem 0.75rem;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg a:hover {
+  background: #18d26e;
+  color: white;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg .bi-plus {
+  top: 25%;
+  left: 33%;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioPic .portfolioBg .bi-link {
+  top: 25%;
+  right: 33%;
+}
+.portfolio .portfolioGrid .portfolioCard:hover .portfolioBg {
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText {
+  z-index: 10;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText .portfolioName {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.portfolio .portfolioGrid .portfolioCard .portfolioText .portfolioType {
+  font-family: "Open Sans", sans-serif;
+  color: #B8B8B8;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.clientSwiper {
+  padding: 4rem 0;
+  max-width: 1320px;
+  margin-inline: auto;
+}
+.clientSwiper h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.clientSwiper h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.clientSwiper h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.clientSwiper .swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.clientSwiper .swiper .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.clientSwiper .swiper .swiper-wrapper .swiper-slide {
+  width: auto;
+  position: relative;
+}
+.clientSwiper .swiper .swiper-wrapper img {
+  margin-right: 1rem;
+}
+
+.testimonials {
+  background: #F7F7F7;
+  padding: 4rem 0;
+}
+.testimonials h3 {
+  z-index: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111111;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.9rem;
+}
+.testimonials h3::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  background: #ddd;
+  height: 1px;
+  width: 120px;
+  left: calc(50% - 60px);
+  z-index: 5;
+  display: block;
+}
+.testimonials h3::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  height: 3px;
+  width: 40px;
+  display: block;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  background: #18d26e;
+}
+.testimonials img {
+  height: 120px;
+  max-width: 120px;
+  border-radius: 50%;
+  position: relative;
+  margin-inline: auto;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.testimonials .testimonialContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials .testimonialContainer .carousel-inner {
+  height: 100%;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item {
+  height: 100%;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  inset: unset;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #111111;
+  margin: 0.625rem 0 0.313rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #999999;
+  font-size: 0.875rem;
+  margin-bottom: 0.9rem;
+  text-transform: capitalize;
+}
+.testimonials .testimonialContainer .carousel-inner .carousel-item .carousel-caption p {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  font-size: 1rem;
+  margin: 0 8.07rem 0.9rem;
+}
