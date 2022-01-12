@@ -771,6 +771,7 @@ header {
         border-radius: 50%;
         position: relative;
         margin-inline: auto;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
     }
     .testimonialContainer {
         @extend %flexCenter;
@@ -790,12 +791,14 @@ header {
                         color: #111111;
                         margin: 0.625rem 0 0.313rem;
                         font-weight: 700;
+                        text-transform: capitalize;
                     }
                     h6 {
                         font-family: $accent-font;
                         color: #999999;
                         font-size: 0.875rem;
                         margin-bottom: 0.9rem;
+                        text-transform: capitalize;
                     }
                     p {
                         font-family: $main-font;
